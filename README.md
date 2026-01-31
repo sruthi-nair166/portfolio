@@ -13,7 +13,7 @@
 
 ### Links
 
-Live Site: []()
+Live Site: [https://sruthi-nair166.github.io/portfolio/](https://sruthi-nair166.github.io/portfolio/)
 
 ### Screenshots
 

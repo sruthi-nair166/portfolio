@@ -3,12 +3,12 @@
 }
 
 [data-bs-theme="light"] #hero {
-  background: url("/assets/hero_bg.jpg") center calc(50% + 36px) / cover
+  background: url("../assets/hero_bg.jpg") center calc(50% + 36px) / cover
     no-repeat !important;
 }
 
 [data-bs-theme="dark"] #hero {
-  background: url("/assets/hero_bg_dark.jpg") center calc(50% + 36px) / cover
+  background: url("../assets/hero_bg_dark.jpg") center calc(50% + 36px) / cover
     no-repeat !important;
 }
 
