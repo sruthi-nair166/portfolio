@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Web Developer Portfolio | Sruthi V Nair</title>
+    <script>
+      (function () {
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        document.documentElement.setAttribute(
+          "data-bs-theme",
+          prefersDark ? "dark" : "light",
+        );
+      })();
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-2" href="#hero">&lt;/&gt;</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav d-flex gap-3 mx-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#projects"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#certifications">Certifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav order-last order-md-0 my-2 text-center">
+              <li class="nav-item">
+                <a
+                  class="btn btn-light border-dark text-dark btn-sm"
+                  href="./assets/sruthi_v_nair_frontend_developer_resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Resume <i class="bi bi-arrow-up-right-square-fill"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        id="hero"
+        class="min-vh-100 d-flex flex-md-row flex-column justify-content-between align-items-center px-lg-5 px-3"
+      >
+        <div class="slider-wrapper">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round">
+              <span
+                ><i
+                  class="slider-icon light bi bi-brightness-high text-dark"
+                ></i
+              ></span>
+              <span
+                ><i
+                  class="slider-icon dark bi bi-moon text-dark"
+                  aria-hidden="true"
+                ></i
+              ></span>
+            </span>
+            <span class="sr-only">Toggle dark/light mode</span>
+          </label>
+        </div>
+
+        <div>
+          <h1 class="text-center mb-0">Sruthi V Nair</h1>
+          <div class="hero-text">
+            <p class="text-center lead fs-2 mb-md-4">Frontend Web Developer</p>
+            <p class="text-center fs-5 mb-md-5 mb-4 font">
+              Focused on translating designs into clean and structured
+              interfaces.
+            </p>
+          </div>
+          <div class="d-flex justify-content-center flex-wrap gap-md-3 gap-3">
+            <a
+              class="btn btn-dark btn-lg border-light hero-btns"
+              href="#projects"
+              class="text-decoration-none text-white"
+              >View My Work</a
+            >
+
+            <a
+              class="btn btn-light btn-lg border-dark hero-btns"
+              href="./assets/sruthi_v_nair_frontend_developer_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-decoration-none text-dark"
+              >View Resume</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-md-column align-items-center gap-3 center-icons"
+        >
+          <a
+            class="icon-hero icon-animate"
+            href="https://github.com/sruthi-nair166"
+            target="_blank"
+            aria-label="link to github profile"
+          >
+            <i class="bi bi-github fs-3" aria-hidden="true"></i>
+          </a>
+          <a
+            class="icon-hero icon-animate"
+            href="https://www.linkedin.com/in/sruthi-v-nair/"
+            target="_blank"
+            aria-label="link to linkedin profile"
+          >
+            <i class="bi bi-linkedin fs-3" aria-hidden="true"></i>
+          </a>
+          <a
+            class="icon-animate"
+            href="https://www.frontendmentor.io/profile/sruthi-nair166"
+            target="_blank"
+            aria-label="link to frontend mentor profile"
+          >
+            <img
+              style="width: 27px"
+              src="./assets/frontendmentor_logo_light.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h2
+            class="text-md-start text-center text-uppercase fs-3 mb-lg-4 mb-5 ls"
+          >
+            About
+          </h2>
+          <div class="row d-flex min-vh-nav">
+            <div
+              class="col-lg-7 mb-lg-0 col-12 mb-5 align-self-start text-sm-start text-center"
+            >
+              <p class="display-6 about-text-1">
+                Implementing
+                <span class="fw-normal">design-driven UIs</span> with clean,
+                responsive <span class="fw-normal">Frontend</span> code.
+              </p>
+            </div>
+
+            <div
+              class="col-lg-5 col-12 align-self-end text-sm-start text-center fs-5 about-text-2"
+            >
+              <p class="fw-light font">
+                <span class="fw-normal fs-2 font-h">Hello,</span> My name is
+                <span class="fw-normal fs-4 font-h">Sruthi V Nair.</span>
+              </p>
+
+              <p class="fw-light font">
+                I focus on building interfaces that are consistent, intuitive,
+                and <span class="fw-normal">accessible</span>, with careful
+                attention to <span class="fw-normal">spacing</span>,
+                <span class="fw-normal">hierarchy</span>, and
+                <span class="fw-normal">responsive</span>
+                behavior. My background in architecture helps me approach
+                <span class="fw-normal">frontend</span> work with attention to
+                <span class="fw-normal">structure</span>,
+                <span class="fw-normal">layout</span>, and
+                <span class="fw-normal">user flow</span>, allowing me to build
+                consistent and predictable interfaces across different screen
+                sizes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <article>
+          <div class="container">
+            <h3 class="text-md-start text-center text-uppercase fs-3 mb-4 mt-5">
+              Skills
+            </h3>
+          </div>
+          <div class="skills-mask">
+            <ol class="container-fluid skills fs-4 d-flex list-unstyled gap-4">
+              <li class="fw-light font skill border rounded-pill">
+                <img class="skill-logo" src="./assets/html.svg" alt="HTML" />
+              </li>
+              <li class="fw-light font skill border rounded-pill p">
+                <img class="skill-logo" src="./assets/css.svg" alt="CSS" />
+              </li>
+              <li class="fw-light font skill border rounded-pill">
+                <img
+                  class="skill-logo"
+                  src="./assets/javascript.png"
+                  alt="JavaScript"
+                />
+              </li>
+              <li class="fw-light font skill border rounded-pill">
+                <img class="skill-logo" src="./assets/react.png" alt="React" />
+              </li>
+              <li class="fw-light font skill border rounded-pill">
+                <img
+                  class="skill-logo"
+                  src="./assets/bootstrap.png"
+                  alt="Bootstrap"
+                />
+              </li>
+              <li class="fw-light font skill border rounded-pill">
+                <img
+                  class="skill-logo"
+                  src="./assets/chakra-ui.png"
+                  alt="Chakra UI"
+                />
+              </li>
+              <li
+                style="font-family: sans-serif"
+                class="fw-light text-dark font skill border rounded-pill fs-6"
+              >
+                <span>Responsive Design</span>
+              </li>
+              <li class="fw-light font skill border rounded-pill">
+                <img
+                  class="skill-logo"
+                  src="./assets/firebase.png"
+                  alt="Firebase"
+                />
+              </li>
+              <li class="fw-light font skill border rounded-pill">
+                <img class="skill-logo" src="./assets/git.svg" alt="Git" />
+              </li>
+              <li class="fw-light font skill border rounded-pill">
+                <img
+                  class="skill-logo"
+                  src="./assets/github.svg"
+                  alt="GitHub"
+                />
+              </li>
+              <li class="fw-light font skill border rounded-pill">
+                <img
+                  class="skill-logo"
+                  src="./assets/vs-code.png"
+                  alt="VS Code"
+                />
+              </li>
+              <li class="fw-light font skill border rounded-pill">
+                <img
+                  class="skill-logo"
+                  src="./assets/chrome-dev-tools.png"
+                  alt="Chrome DevTools"
+                />
+              </li>
+            </ol>
+          </div>
+        </article>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2 class="text-md-start text-center text-uppercase fs-3 mb-4 ls">
+            Projects
+          </h2>
+
+          <div class="row g-lg-4 g-md-5 g-3" id="card-container">
+            <article
+              class="col-lg-4 col-md-6"
+              aria-labelledby="Bookmark Landing page"
+            >
+              <div class="card h-100">
+                <div class="img-wrap">
+                  <img
+                    src="./assets/bookmark-landing-page.jpg"
+                    class="card-img-top"
+                    alt="preview of bookmark landing page"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5
+                    id="Bookmark Landing page"
+                    class="card-title fs-2 fw-normal"
+                  >
+                    Bookmark Landing page
+                  </h5>
+                  <p class="card-text">
+                    A responsive marketing landing page built to closely match
+                    the design, ensuring precise layout, proper spacing, and a
+                    polished appearance across devices.
+                  </p>
+                  <div class="d-flex flex-wrap mb-4 gap-2">
+                    <span class="badge bg-light text-dark border border"
+                      >HTML</span
+                    >
+                    <span class="badge bg-secondary">CSS</span>
+                    <span class="badge bg-dark border border-light"
+                      >JavaScript</span
+                    >
+                  </div>
+                  <a
+                    href="https://sruthi-nair166.github.io/Bookmark-Landing/"
+                    target="_blank"
+                    class="btn btn-dark border-light me-1"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/sruthi-nair166/Bookmark-Landing"
+                    target="_blank"
+                    class="btn btn-light border-dark"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-lg-4 col-md-6"
+              aria-labelledby="Travel Landing page"
+            >
+              <div class="card h-100">
+                <div class="img-wrap">
+                  <img
+                    src="./assets/travel-landing-page.gif"
+                    class="card-img-top"
+                    alt="preview of travel landing page"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5
+                    id="Travel Landing page"
+                    class="card-title fs-2 fw-normal"
+                  >
+                    Travel Landing page
+                  </h5>
+                  <p class="card-text">
+                    A responsive travel landing page focused on layout,
+                    typography, and visual hierarchy.
+                  </p>
+                  <div class="d-flex flex-wrap mb-4 gap-2">
+                    <span class="badge bg-light text-dark border border"
+                      >HTML</span
+                    >
+                    <span class="badge bg-secondary">CSS</span>
+                    <span class="badge bg-dark border border-light"
+                      >JavaScript</span
+                    >
+                  </div>
+                  <a
+                    href="https://sruthi-nair166.github.io/Travel-Landing-Page/"
+                    target="_blank"
+                    class="btn btn-dark border-light me-1"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/sruthi-nair166/Travel-Landing-Page"
+                    target="_blank"
+                    class="btn btn-light border-dark"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="col-lg-4 col-md-6" aria-labelledby="Room Homepage">
+              <div class="card h-100">
+                <div class="img-wrap">
+                  <img
+                    src="./assets/room-homepage.png"
+                    class="card-img-top"
+                    alt="preview of room homepage"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 id="Room Homepage" class="card-title fs-2 fw-normal">
+                    Room Homepage
+                  </h5>
+                  <p class="card-text">
+                    A responsive homepage with an interactive hero slider, built
+                    using Bootstrap grid and custom styles, with
+                    keyboard-accessible navigation.
+                  </p>
+                  <div class="d-flex flex-wrap mb-4 gap-2">
+                    <span class="badge bg-light text-dark border border"
+                      >HTML</span
+                    >
+                    <span class="badge bg-secondary">CSS</span>
+                    <span class="badge bg-dark border border-light"
+                      >Bootstrap</span
+                    >
+                  </div>
+                  <a
+                    href="https://sruthi-nair166.github.io/room-homepage/"
+                    target="_blank"
+                    class="btn btn-dark border-light me-1"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/sruthi-nair166/room-homepage"
+                    target="_blank"
+                    class="btn btn-light border-dark"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="col-lg-4 col-md-6" aria-labelledby="Phonebook App">
+              <div class="card h-100">
+                <div class="img-wrap">
+                  <img
+                    src="./assets/phonebook-app.png"
+                    class="card-img-top"
+                    alt="preview of phonebook site"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 id="Phonebook App" class="card-title fs-2 fw-normal">
+                    Phonebook app
+                  </h5>
+                  <p class="card-text">
+                    A responsive Phonebook app with clear empty states, modal
+                    workflows, and REST API–based CRUD functionality.
+                  </p>
+                  <div class="d-flex flex-wrap mb-4 gap-2">
+                    <span class="badge bg-light text-dark border border"
+                      >HTML</span
+                    >
+                    <span class="badge bg-secondary">CSS</span>
+                    <span class="badge bg-dark border border-light"
+                      >JavaScript</span
+                    >
+                  </div>
+                  <a
+                    href="https://sruthi-nair166.github.io/phonebook/"
+                    target="_blank"
+                    class="btn btn-dark border-light me-1"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/sruthi-nair166/phonebook"
+                    target="_blank"
+                    class="btn btn-light border-dark"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-lg-4 col-md-6"
+              aria-labelledby="Trivia Quiz app"
+            >
+              <div class="card h-100">
+                <div class="img-wrap">
+                  <img
+                    src="./assets/trivia-quiz-app.png"
+                    class="card-img-top"
+                    alt="preview of trivia quiz app"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 id="Trivia Quiz app" class="card-title fs-2 fw-normal">
+                    Trivia Quiz app
+                  </h5>
+                  <p class="card-text">
+                    A category-based quiz application with authentication,
+                    API-driven questions, user stats, and clear feedback flows.
+                  </p>
+                  <div class="d-flex flex-wrap mb-4 gap-2">
+                    <span class="badge bg-light text-dark border border"
+                      >HTML</span
+                    >
+                    <span class="badge bg-secondary">CSS</span>
+                    <span class="badge bg-secondary">JavaScript</span>
+                    <span class="badge bg-dark border border-light">React</span>
+                    <span class="badge bg-light text-dark border border"
+                      >Firebase</span
+                    >
+                  </div>
+                  <a
+                    href="https://trivia-quiz-app-s.netlify.app/"
+                    target="_blank"
+                    class="btn btn-dark border-light me-1"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/sruthi-nair166/Quiz-App"
+                    target="_blank"
+                    class="btn btn-light border-dark"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-lg-4 col-md-6"
+              aria-labelledby="Personal Portfolio site"
+            >
+              <div class="card h-100">
+                <div class="img-wrap">
+                  <img
+                    src="./assets/personal-portfolio.gif"
+                    class="card-img-top"
+                    alt="preview of personal portfolio site"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5
+                    id="Personal Portfolio site"
+                    class="card-title fs-2 fw-normal"
+                  >
+                    Personal Portfolio site
+                  </h5>
+                  <p class="card-text">
+                    A responsive portfolio website designed with clear
+                    navigation, smooth transitions, and dynamic layout and
+                    animations for a seamless user experience.
+                  </p>
+                  <div class="d-flex flex-wrap mb-4 gap-2">
+                    <span class="badge bg-light text-dark border border"
+                      >HTML</span
+                    >
+                    <span class="badge bg-secondary">CSS</span>
+                    <span class="badge bg-secondary">Bootstrap</span>
+                    <span class="badge bg-dark border border-light"
+                      >JavaScript</span
+                    >
+                  </div>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="btn btn-dark border-light me-1"
+                    >View Live</a
+                  >
+                  <a href="" target="_blank" class="btn btn-light border-dark"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications">
+        <div class="container">
+          <h2 class="text-md-start text-center text-uppercase fs-3 mb-4 ls">
+            Certifications
+          </h2>
+
+          <div class="row certifications-wrapper">
+            <div class="text-center col-lg mb-3">
+              <img
+                class="cert img-fluid border border-1"
+                src="./assets/fCC-responsive-web-design-certification.png"
+                alt="freeCodeCamp Responsive Web Design certification"
+              />
+              <div class="mt-2">
+                <span>freeCodeCamp Responsive Web Design Certificate -</span>
+                <span class="fw-bold">HTML, CSS, Accessibility (basics)</span>
+              </div>
+            </div>
+
+            <div class="text-center col-lg mb-3">
+              <img
+                class="cert img-fluid border border-1"
+                src="./assets/fCC-javascript-algorithms-and-data-structures-certification.png"
+                alt="freeCodeCamp JavaScript Algorithms and Data Structures certification"
+              />
+              <div class="mt-2">
+                <span
+                  >freeCodeCamp JavaScript Algorithms and Data Structures
+                  Certificate -</span
+                >
+                <span class="fw-bold">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="text-center col-lg">
+              <img
+                class="cert img-fluid border border-1"
+                src="./assets/fCC-frontend-development-libraries-certification.png"
+                alt="freeCodeCamp Fronted Development Libraries certification"
+              />
+              <div class="mt-2">
+                <span
+                  >freeCodeCamp Frontend Development Libraries Certificate
+                  -</span
+                >
+                <span class="fw-bold">React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container-fluid site-footer">
+          <div class="row">
+            <div
+              class="d-flex flex-column justify-content-between pt-lg-5 px-lg-5 p-md-5 pt-5 px-5"
+            >
+              <div>
+                <p class="display-5 fw-normal">You can reach me at:</p>
+                <p class="d-flex gap-2 align-content-center">
+                  <i class="bi bi-envelope-fill" aria-hidden="true"></i
+                  >sruthivnair78@gmail.com
+                </p>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div
+        class="footer-wrap container-fluid d-flex justify-content-between align-items-center px-lg-5 pb-md-4 px-md-5 site-footer"
+      >
+        <div class="d-flex gap-3 align-items-center mt-md-0 mt-5">
+          <a
+            class="icon-footer icon-animate"
+            href="https://github.com/sruthi-nair166"
+            target="_blank"
+            aria-label="link to github profile"
+          >
+            <i class="bi bi-github fs-4" aria-hidden="true"></i>
+          </a>
+          <a
+            class="icon-footer icon-animate"
+            href="https://www.linkedin.com/in/sruthi-v-nair/"
+            target="_blank"
+            aria-label="link to linkedin profile"
+          >
+            <i class="bi bi-linkedin fs-4" aria-hidden="true"></i>
+          </a>
+          <a
+            class="icon-animate"
+            href="https://www.frontendmentor.io/profile/sruthi-nair166"
+            target="_blank"
+            aria-label="link to frontend mentor profile"
+          >
+            <img
+              style="width: 27px"
+              src="./assets/frontendmentor_logo_light.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <p class="text-center mb-0">
+          &copy; 2025 Sruthi V Nair. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
