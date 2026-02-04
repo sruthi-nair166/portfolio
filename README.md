@@ -6,6 +6,7 @@
   - [Links](#links)
   - [Screenshots](#screenshots)
   - [Overview](#overview)
+  - [UI/UX Decisions](#ui/ux-decisions)
   - [Built with](#built-with)
 - [Author](#author)
 
